@@ -1,6 +1,6 @@
 'use strict';
 
-require('dotenv').load();
+// require('dotenv').load();
 
 var express     = require('express');
 var bodyParser  = require('body-parser');
@@ -21,7 +21,7 @@ app.use(cors({origin: '*'})); //For FCC testing purposes only
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(helmet()) 
+app.use(helmet())
 
 //Index page (static HTML)
 app.route('/')
